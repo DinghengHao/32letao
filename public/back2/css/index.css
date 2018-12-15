@@ -1,0 +1,14 @@
+.mner,.bing{
+width: 48%;
+height: 400px;
+margin-top: 50px;
+}
+.mner{
+    /* background-color: yellow; */
+    float: left;
+    margin-left: 20px;
+}
+.bing{
+    /* background-color: red; */
+    float: right;
+}

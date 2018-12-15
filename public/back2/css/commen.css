@@ -1,0 +1,142 @@
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+text-decoration: none;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+.aside{
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    position: fixed;
+    z-index: 999;
+    top:0px;
+    left:0px;
+    transition: all 1s;
+}
+/*滑动效果 */
+.slide{
+    left: -180px;
+}
+
+.aside .top{
+    height: 50px;
+    width: 100%;
+    background-color: #367FA9;
+    text-align: center;
+    line-height: 50px;
+}
+.aside .top a{
+color: #fff;
+font-size: 20px;
+}
+.aside .img{
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    height: 180px;
+  text-align: center;
+}
+.aside img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+  
+}
+.aside p{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.aside .product ul li{
+   list-style: none;
+   /* height: 40px; */
+  
+  
+}
+.aside .product ul li:nth-child(2) .fei{
+    width: 100%;
+   
+    display: none;
+  
+}
+.aside .product ul li:nth-child(2) .fei a{
+    display: block;
+    width: 180px;
+    height: 100%;
+     padding-left:65px;
+}
+
+.aside .product ul li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    padding-left: 40px;
+    border-left: 3px solid transparent;
+   
+}
+.aside .product ul li a i{
+    padding-right: 5px;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #3C8DBC;
+    padding-left: 180px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    line-height: 50px;
+    transition: all 1s;
+}
+/*滑动效果 */
+.xuan{
+    padding-left: 0px;
+}
+.nav i{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*滑动效果 */
+.text.xuan{
+    padding-left: 0px;
+}
+.text{
+    padding-top: 50px;
+    padding-left: 180px;
+    width: 100%;
+    /* height: 2000px; */
+    /* background-color: pink; */
+    transition: all 1s;
+}
+
+#active{
+    background-color: #1D1F21;
+    border-left:3px solid #006699;
+}
+/* 导航 */
+.gation{
+    margin: 20px 10px;
+}
+
+/* 模态框 */
+#myModal .modal-body{
+    color: #A94442;
+}
