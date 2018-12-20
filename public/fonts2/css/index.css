@@ -1,0 +1,107 @@
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+
+html,body{
+    height: 100%;
+}
+
+
+.box{
+ max-width: 640px;
+ min-width: 320px;
+ width: 100%;
+ height: 100%;
+ margin: 0 auto;
+ overflow: hidden;
+ background-color: #fff;
+}
+.bottom , .top{
+position: fixed;
+max-width: 640px;
+min-width: 320px;
+width: 100%;
+z-index: 888;
+
+
+}
+.bottom{
+    bottom: 0;
+    height: 55px;
+    background-color: #006699;
+}
+.bottom ul li{
+    padding-top: 8px;
+    list-style: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+   
+}
+.bottom li a{
+    color: #fff;
+    font-size: 18px;
+}
+.bottom li a p{
+    margin: 0px;
+    color: #fff;
+}
+/* 突出显示 */
+.bottom li a .current{
+    color: orange;
+}
+
+
+
+.top{
+    top: 0px;
+    height: 45px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 18px;
+}
+.top .home  , .top .seach{
+    position: absolute;
+    top: 0px;
+}
+.top .home{
+    position: absolute;
+    left: 0px;
+    height: 45px;
+    width: 45px;
+    /* background-color: red; */
+}
+.top .seach{
+    position: absolute;
+    right: 0px;
+    height: 45px;
+    width: 45px;
+    /* background-color: blue; */
+}
+.top .seach i,.top .home i{
+    color: #fff;
+}
+.top .txt h1{
+  line-height: 35px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.conter{
+    width: 100%;
+    height: 100%;
+    /* background-color:hotpink; */
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+.content{
+    width: 100%;
+    height: 100%; 
+    /* position: relative; */
+}

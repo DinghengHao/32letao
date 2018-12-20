@@ -94,7 +94,7 @@ $(function() {
     })
   })
   // 点击重置
-  $('[type ="reset"]').click(function() {
+  $('[type = "reset"]').click(function() {
     $('#form')
       .data('bootstrapValidator')
       .resetForm() //重置表单，并且会隐藏所有的错误提示和图标

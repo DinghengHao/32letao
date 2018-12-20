@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/itme.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="top">
+        <div class="home"><i class="fa fa-home"></i></div>
+        <div class="txt"><h1>乐淘云购</h1></div>
+        <div class="seach">
+           <a href="./search.html"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+      <div class="conter">
+        <div class="product-left">
+          <div class="content">
+            <div class="scroll">
+              <ul class="ul-first">
+                <!-- 一级分类页面 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-right">
+          <div class="content">
+            <div class="scroll">
+              <ul class="mui-clearfix second">
+                <!-- 动态渲染二级页面 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li>
+            <a href="common.html"
+              ><i class="fa fa-home "></i>
+              <p>首页</p></a
+            >
+          </li>
+          <li>
+            <a href="itme.html"
+              ><i class="fa fa-bars current"></i>
+              <p class="current">分类页</p></a
+            >
+          </li>
+          <li>
+            <a href="shopping.html"
+              ><i class="fa fa-shopping-cart"></i>
+              <p>购物车</p></a
+            >
+          </li>
+          <li>
+            <a href="user.html"
+              ><i class="fa fa-user"></i>
+              <p>用户中心</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- class="curren" -->
+    <!-- 动态渲染一级分类页面 -->
+    <script type="text/html" id="first-itme">
+      {{each rows v i}}
+      {{if i === 0}}
+      <li><a href="#"  class="curren" data-id = "{{v.id}}">{{v.categoryName}}</a></li>
+
+      {{else}}
+      <li><a href="#" data-id = "{{v.id}}">{{v.categoryName}}</a></li>
+      {{/if}}
+      {{/each}}
+    </script>
+    <!-- 动态渲染二级页面 -->
+    <script type="text/html" id="second-itme">
+        {{if rows.length ===0 }}
+        <p>没有更多分类信息了...</p>
+        {{else}}
+       {{each rows v i}}
+      <li>
+        <a href="#"><img src="{{v.brandLogo}}" alt=""/></a>
+        <p>{{v.brandName}}</p>
+      </li>
+      {{/each}}
+      {{/if}}
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/itme.js"></script>
+  </body>
+</html>

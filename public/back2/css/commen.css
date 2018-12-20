@@ -137,6 +137,17 @@ font-size: 20px;
 }
 
 /* 模态框 */
-#myModal .modal-body{
+ .modal-body{
     color: #A94442;
+}
+table.table.table-hover tr th{
+    text-align: center;
+}
+.table.table-hover > tbody > tr > td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.add{
+   margin-bottom: 20px; 
 }
