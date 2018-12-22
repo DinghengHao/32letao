@@ -22,9 +22,14 @@ $(function() {
 
   //    点击全部删除
   $('.history').on('click', '.del', function() {
-    localStorage.removeItem('item')
-    rander()
-    // console.log(123)
+    mui.confirm('你确定要清空历史记录吗?', '温馨提示',['取消','确认'],function (e) {
+      console.log(e);
+      if (e.index === 1) {
+        localStorage.removeItem('item')
+        rander()
+      }
+    })
+  
   })
   //点击删除单个
   $('.history').on('click', '.btn_delete', function() {
@@ -51,6 +56,7 @@ $(function() {
         mui.toast( "请输入搜索关键字" )
         return;
     }
+    location.href ="product-litm.html?key="+text
     //   console.log(text);
     var arradd = item()
     //   判断输入的内容是否与数组中重合
@@ -71,9 +77,18 @@ $(function() {
     // 存入localStorage
     var str = JSON.stringify(arradd)
     localStorage.setItem('item', str)
-    // 清空输入框
-    $('.scroll input').val('')
     // 刷新
     rander()
+  
+    // 清空输入框
+    $('.scroll input').val('')
   })
 })
+
+
+// 点击历史记录获取文字通过网址传给下一页
+  $('.history').on('click','.btn-search',function () {
+   var txt = $(this).text()
+   location.href ="product-litm.html?key="+txt
+   
+  })

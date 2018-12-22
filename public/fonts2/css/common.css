@@ -13,39 +13,4 @@
     display: block;
 }
 
-.part{
-    padding: 10px;
-}
-.part ul li{
-    /* float: left; */
-    margin-bottom: 10px;
-    width: 48%;
- 
-}
 
-.part ul li:nth-child(odd){
-    float: left;
-}
-.part ul li:nth-child(even){
-    float: right;
-}
-.part ul li a{
-    display: block;
-  
-    border:1px solid #ccc;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-}
-.part ul li a img{
-    width: 130px;
-    height: 130px;
-    margin: 0 auto;
-}
-.part ul li a .yan span:first-child{
-   color: red;
-}
-.part ul li a .yan span:last-child{
-    text-decoration: line-through;
- }
- 

@@ -19,11 +19,18 @@
             <div class="txt"><h1>搜索中心</h1></div>
             
         </div>
+        
         <div class="conter">
             <div class="content">
                 <div class="scroll">
+
+
+
+
                  <input type="text" placeholder="请输入搜索关键字">
+                 <!-- <a href="./product-litm.html" class="a"> -->
                  <button class="mui-btn mui-btn-primary sech">搜索</button>
+                <!-- </a> -->
                  <div class="history">
                     <!-- 动态渲染部分 -->
                  </div>
@@ -53,7 +60,7 @@
         
         <ul class="mui-clearfix">
                 {{each arrs v i}}
-                <li><a href="#"><span>{{v}}</span><i class="btn_delete mui-pull-right mui-icon mui-icon-closeempty" data-id = "{{i}}"></i></a></li>
+                <li><a href="#"><span class="btn-search" >{{v}}</span><i class="btn_delete mui-pull-right mui-icon mui-icon-closeempty" data-id = "{{i}}"></i></a></li>
                 {{/each}}
            </ul>
            {{/if}}
